@@ -1,0 +1,306 @@
+{{ define "main" }}
+
+  {{ if .Site.Data.homepage.banner.enable }}
+  <!-- hero area -->
+  <section class="hero-sec" id="hero">
+   <div class="container">
+<div class="row">
+<div class="col-md-8">
+<h2 class="head">We have been helping Rapid City Community
+live better for the last 5 years!</h2>
+
+ {{ with .Site.Data.homepage.banner}}
+         <p class="head-text">{{.head | markdownify}}</p>
+<h4 class="sub-head">Solutions offered:</h4>
+      
+  <ul class="lis-cus">
+<li><span class="lis-col">Cancer Care:</span>{{.list1 | markdownify}}</li>
+<li><span class="lis-col">Salivary Gland:</span>{{.list2  | markdownify}}</li>
+<li><span class="lis-col">Sinus:</span>{{.list3  | markdownify}}</li>
+<li><span class="lis-col">Speech And Swallowing: </span>{{.list4  | markdownify}}</li>
+<li><span class="lis-col">Thyroid Issues:</span>{{.list5  | markdownify}}</li>
+  </ul>
+
+ {{ end }}
+</div>
+
+
+<div class="col-md-4">
+  <div class="form-frame">
+    <div class="formtitle_style">Schedule your consultation today</div>
+ <form action="/action_page.php">
+    <div class="form-group first_form">
+      <label for="Name">Name*</label>
+      <input type="email" class="form-control" id="first"  name="name" required>
+    </div>
+   <div class="form-group first_form">
+      <label for="Name">Email*</label>
+      <input type="email" class="form-control" id="first"  name="email" required >
+    </div>
+   <div class="form-group first_form">
+      <label for="Name">Phone Number*</label>
+      <input type="number" class="form-control" id="first"  name="number" required>
+    </div>
+
+      <div class="form-group ">
+   <label for="Name">Comments**</label><br>
+ <textarea name="item_meta" id="field_3n83xw" rows="3" class="arf_required" placeholder="" data-validation-required-message="This field cannot be blank." aria-invalid="false" required></textarea>
+</div>
+
+    <div class="form-group form-check">
+    </div>
+    <button type="submit" class="btn-cus"><span class="btn-txt">Book An Appointment Today!</span></button>
+  </form>
+
+</div>
+</div>
+
+
+</div>
+   </div>
+
+  </section>
+  <!-- /hero area -->
+    {{ end }}
+
+
+
+
+{{ if .Site.Data.homepage.jumbo.enable }}
+<!--jumbo section starts-->
+  
+<section class="jumbo">
+
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+         {{ with .Site.Data.homepage.jumbo }}
+<h2>{{.head | markdownify}}</h2>
+<p>{{.content | markdownify}}</p>
+ {{ end }}
+        </div>
+
+
+</div>
+</div>
+
+  
+</section>
+ {{ end }}
+<!--jumbo section ends-->
+ 
+
+
+
+  {{ if .Site.Data.homepage.about.enable }}
+
+  <!-- about -->
+  <section class="section1 ">
+    <div class="container">
+      <div class="row ">
+       <div class="col-lg-12 text-center  ab-sec">
+          <h2 class="section-title1">Welcome to <span class="ab-tit">West River ENT</span></h2>
+        </div>
+      </div>
+
+<div class="row">
+           {{ with .Site.Data.homepage.about }}
+<div class="col-md-6">
+    <img class="img-fluid" src="{{`images/wernt_about.jpg`|relURL}}" alt="bg-image">
+</div>
+<div class="col-md-6">
+  <p class="about-text">{{.para1 | markdownify}}</p>
+  <p class="about-text">{{.para2 | markdownify}}</p>
+</div>
+{{ end }}
+</div>
+
+
+    </div>
+  </section>
+  <!-- /about -->
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.testi.enable }}
+
+<!--testimonial section starts-->
+<section class="testi">
+<div class="container">
+  {{ with .Site.Data.homepage.testi }}
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 class="testi-head">{{.head | markdownify}}</h2>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-3 avatar">
+  
+   <img class="img-fluid" src="{{`images/testi_avtar.png`|relURL}}" alt="testi avator">
+</div>
+<div class="col-md-9">
+  <div class="text-left testi1">
+  <p>{{.testi1 | markdownify}}</p>
+  <div class="testi1-name">- Josh Biberdorf </div>
+</div>
+</div>
+</div>
+  {{ end }}
+</div>
+</section>
+<!--testimonial section ends-->
+  {{ end }}
+
+ 
+
+   {{ if .Site.Data.homepage.service.enable }}
+
+<!--service section starts-->
+<section class="service">
+<div class="container">
+  {{ with .Site.Data.homepage.service }}
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 class="testi-head">{{.head | markdownify}}</h2>
+</div>
+</div>
+
+<div class="row box-row">
+<div class="col-md-4">
+  <div class="blue-box text-center">
+    <figure class="img-box">
+<img src="{{`images/icon_img1.png`|relURL}}" class="img-fluid" alt="icon1">
+    </figure>
+<h3 class="elementor-image-box-title">{{.title1 | markdownify}} </h3>
+<p class="box-text">{{.content1 | markdownify}}</p>
+  </div>
+</div>
+<div class="col-md-4">
+    <div class="blue-box text-center">
+      <figure class="img-box">
+<img src="{{`images/icon_img2.png`|relURL}}" class="img-fluid" alt="icon1">
+    </figure>
+<h3 class="elementor-image-box-title">{{.title2 | markdownify}} </h3>
+<p class="box-text">{{.content2 | markdownify}}</p>
+  </div>
+</div>
+<div class="col-md-4">
+    <div class="blue-box text-center">
+      <figure class="img-box">
+<img src="{{`images/icon_img3.png`|relURL}}" class="img-fluid" alt="icon1">
+    </figure>
+<h3 class="elementor-image-box-title">{{.title3 | markdownify}} </h3>
+<p class="box-text">{{.content3 | markdownify}}</p>
+  </div>
+</div>
+
+</div>
+
+  {{ end }}
+</div>
+</section>
+<!--service section ends-->
+
+{{ if .Site.Data.homepage.expert.enable }}
+<!--expert now section starts-->
+<section class="expert">
+<div class="conatainer">
+    {{ with .Site.Data.homepage.expert }}
+<div class="row">
+<div class="col-md-12 text-center">
+  <h2 class="expert-head">{{.head | markdownify}}</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-3 ex-img">
+  <img src="images/call-1.png">
+</div>
+<div class="col-md-3 box-ph">
+  <h2 class="ex-ph">{{.ph | markdownify}}</h2>
+</div>
+<div class="col-md-6">
+  <div class="timing"><strong>ENT &amp; Audiology Hours</strong><br>
+<span>{{.ent | markdownify}}<span></div>
+
+  <div class="timing tim"><strong>Allergy Clinic Walk-in Shots</strong><br>
+<span>{{.allergy | markdownify}}<span></div>
+</div>
+</div>
+
+
+
+
+{{ end }}
+</div>
+</section>
+<!--expert now section ends-->
+  {{ end }}
+
+
+{{ if .Site.Data.homepage.button.enable }}
+<!--button section starts-->
+<section class="but-sec">
+<div class="container">
+      {{ with .Site.Data.homepage.button }}
+<div class="row">
+<div class="col-md-12 but-head text-center">
+<h2>{{.head | markdownify}}</h2>
+</div
+></div>
+<div class="row">
+  <div class="col-md-6">
+   <a href="#hero" class="btn1 right">Contact us today</a>
+  </div>
+ <div class="col-md-6">
+   <a href="#" class="btn2 left">Schedule an Appointment Now</a>
+  </div>
+</div>
+
+
+{{ end }}
+</div>
+</section>
+<!--button section ends-->
+
+<!--location section starts-->
+<section class="location">
+  <div class="container">
+ <div class="row">
+<div class="col-md-12 text-center ">
+<h2 class="loc-head">Our Location</h2>
+</div>
+
+ </div>
+ <div class="map">
+<iframe   frameborder="0" scrolling="no" width="100%"
+height="300" src="https://maps.google.com/maps?q=West%20River%20Ear%2C%20Nose%20%26%20Throat&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="West River Ear, Nose &amp; Throat"></iframe>
+</div>
+</div>
+</section>
+<!--location section ends-->
+
+
+
+  {{ end }}
+
+
+  {{ end }}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+{{ end }}
