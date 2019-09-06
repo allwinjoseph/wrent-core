@@ -1,0 +1,64 @@
+  # banner
+banner:
+  enable : true
+  head : "Get the highest quality Ear, Nose, Throat, and Allergy Care with an approach designed specifically for you."
+  list:
+  list1: "Each year, more than 55,000 Americans will develop cancer of the head and neck."
+  list2: "There are three pairs of major salivary glands in the mouth and throat: submandibular, sublingual, and parotid, along with several hundred smaller minor salivary glands."
+  list3: "If you suffer from sinus headaches, nasal obstruction, nasal drainage, or loss of smell you may have a sinus issue."
+  list4: "Speech delay is the most common developmental disorder among preschool age children and is different than language delays."
+  list5: "Thyroid problems include overactive (hyperthyroidism) or underactive (hypothyroidism) thyroid function, autoimmune conditions (Graves’ disease and Hashimoto’s thyroiditis), and growths or nodules of the thyroid."
+
+ # jumbo
+jumbo:
+  enable : true
+  head: "#1 OTOLARYNGOLOGIST IN RAPID CITY"
+  content : "We offer the latest in ENT Healthcare in a low-pressure environment that puts your needs first"
+ 
+
+
+ # about
+about:
+  enable : true
+  para1 : "As one of the Rapid City area’s most prominent resources for quality healthcare, West River Ear, Nose & Throat specializes in a wide range of medical services to get you and your family feeling healthier than ever before. And while we work hard to offer top-of-the-line treatments that help you feel better and get better, we also focus on preventative strategies to ensure you stay better for longer."
+
+  para2 : "You can trust that you’re in good hands at West River Ear, Nose & Throat, where we’re proud to serve residents of Rapid City, SD. Our physicians have completed extensive education and training to make sure you’re provided with the most state-of-the-art treatments and options for your health concerns. As one of the Rapid City area’s most prominent resources for quality healthcare, West River Ear, Nose & Throat specializes in a wide range of medical services to get you and your family feeling healthier than ever before. And while we work hard to offer top-of-the-line treatments that help you feel better and get better, we also focus on preventative strategies to ensure you stay better for longer. We work with patients who suffer from ear, nose, throat, and allergy conditions that prevent them from living each day to its fullest, and it’s our mission to offer personalized solutions to meet your individual needs. From sore throats and skin allergies to sleep apnea, the staff at West River ENT Care is honored to work with you on the path toward healthier living."
+  image : "images/wernt_about.jpg"
+
+ # testi
+testi:
+  enable : true
+  head: "What our patients say about us"
+  image : "images/testi_avtar.png"
+  testi1: "Dr. Rob and his team are great! He has worked with my young son, has a great bed side manner, answered all our questions and put my son at ease. I would highly recommend this office!"
+
+
+ # service
+service:
+  enable : true
+  head: "Expert Advice, Personalized Care and Exceptional Value"
+  title1: "Personalized Care"
+  content1: "Our experienced staff works exclusively to serve your personal needs."
+  title2: "Experience"
+  content2: "With 15 years of experience, our staff is dedicated to providing the best care possible. We are focused on your individual needs."
+  title3: "Innovative Technology"
+  content3: "We use the latest in healthcare technology to deliver the best service available. From children to adults, we have your needs covered."
+  image1 : "images/icon_img1.png"
+  image1 : "images/icon_img2.png"
+  image1 : "images/icon_img3.png"
+
+
+ # expert
+expert:
+  enable : true
+  head: "Speak to an expert now"
+  content : "We offer the latest in ENT Healthcare in a low-pressure environment that puts your needs first"
+  ent: "Monday – Thursday : 8:00am – 5:00pm | Friday : 8:00am – 4:00pm"
+  allergy: "Monday – Thursday : 8:00am – 4:00pm | Friday : Closed"
+  ph: "(605) 939-7863"
+
+  # button
+button:
+  enable : true
+  head: "We take care of your Ear Nose, Throat, and Allergy needs"
+  content : "We offer the latest in ENT Healthcare in a low-pressure environment that puts your needs first"
